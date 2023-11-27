@@ -21,9 +21,9 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: 22
-        script: 
-          cd aisb/uaisara/shop
-          source ./venv/bin/activate
+        script: |
+          cd aisb/uaisara
+          source root/venv/bin/activate
           git pull
           python manage.py migrate
           python manage.py collectstatic --noinput
