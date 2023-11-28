@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand
 
 import telebot
-from shop.models import Product
+from shop.models import Food
 
 bot = telebot.TeleBot("6784413566:AAHc19yxI45oaeqcjJNQv43Dlm6nonN6sww")
 
